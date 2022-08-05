@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Продукты</title>
+</head>
+<body>
+<h1>Список товаров</h1>
+{% for product in product_list %}
+    <a href="/products/{{ product.id }}/">Название:{{ product.name }}</a>
+    <p>Цена:{{ product.price }}</p>
+    <hr/>
+{% endfor %}
+</body>
+</html>

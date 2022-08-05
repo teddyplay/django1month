@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная станица</title>
+</head>
+<body>
+<h1 style="background: darkgreen">Главная страница</h1>
+<h1>{{ Ablai }}</h1>
+<h1 style="background: blue">{{ Aba }}</h1>
+{% for name in name %}
+    <p {% if name == 'Aba'%}style="color: brown" {% endif %}> {{ name }}</p>
+{% endfor %}
+</body>
+</html>

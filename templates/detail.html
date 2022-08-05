@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Информация о данном продукте</title>
+</head>
+<body>
+<a href="/products/">
+    <button style="background-color: #d0750a">Назад</button>
+</a>
+<h1>Название:{{ product_detail }}</h1>
+<p>Цена:{{ product_detail.price }}</p>
+<p>Описание:{{product_detail.description}}</p>
+<p>Активен::{{ product_detail.is_active}}</p>
+<p>Дата:{{ product_detail.created_ad }}</p>
+<hr/>
+</body>
+</html>
